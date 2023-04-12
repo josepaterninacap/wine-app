@@ -1,4 +1,4 @@
-This repository is a clone of [react-wines-103-bis](https://github.com/react-bootcamp/react-wines-103-biss)
+This repository is a clone of [react-wines-103-bis](https://github.com/react-bootcamp/react-wines-103-bis)
 
 # React Wines 103 bis
 

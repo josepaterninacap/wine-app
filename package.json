@@ -1,0 +1,31 @@
+{
+  "name": "react-wines-103",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://josepaterninacap.github.io/react-wines-103-bis/",
+  "devDependencies": {
+    "react-scripts": "1.0.14"
+  },
+  "dependencies": {
+    "es-symbol": "1.1.2",
+    "es6-shim": "0.35.3",
+    "history": "4.7.2",
+    "prettier": "1.7.4",
+    "prop-types": "15.6.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-redux": "5.0.6",
+    "react-router-dom": "4.2.2",
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0",
+    "whatwg-fetch": "2.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "publish": "rm -rf ./docs && npm run build && cp -r ./build ./docs && git add --all && git commit -am 'Publish new static version' && git push origin master && rm -rf ./build",
+    "prettier": "prettier --write --single-quote --trailing-comma es5 --print-width 100 --tab-width 2 --jsx-bracket-same-line \"src/**/*.js\""
+  }
+}

@@ -17,9 +17,9 @@ class WineList extends Component {
     return (
       <div className="col s12 m6 l4 offset-m3 offset-l4">
         <h2 className="center-align">Wines</h2>
-        <div className="collection">
+        <div data-test-id="wines-list-container" className="collection">
           {this.props.wines.map(wine => (
-            <a
+            <a data-test-id="wines-list-item"
               key={wine.id}
               href="#!"
               onClick={e => this.onSelectWine(e, wine.id)}

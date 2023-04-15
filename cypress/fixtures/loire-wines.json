@@ -1,0 +1,14 @@
+[
+  {
+    "id": "les-cailloux",
+    "name": "Les Cailloux",
+    "type": "Rouge",
+    "appellation": {
+      "name": "Saint-Nicolas-de-Bourgueil",
+      "region": "Loire"
+    },
+    "grapes": [
+      "Cabernet Franc"
+    ]
+  }
+]

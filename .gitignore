@@ -14,4 +14,7 @@ build
 .env
 npm-debug.log
 *.lock
+.vscode
+videos
+screenshots
 /build

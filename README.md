@@ -15,3 +15,14 @@ or if you use `yarn`
 yarn install
 yarn start
 ```
+
+# Running Cypress tests
+
+The tests can run in 2 scenarios: **real scenario** and **simulated scenario**
+
+The `env` variable *realscenario* can be set with `true` or `false`
+
+```shell
+npx cypress run --env realscenario=false
+```
+

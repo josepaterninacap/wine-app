@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "7b3n2b",
   env: {
     realscenario: true
   },

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "chevrol-bel-air",
+    "name": "Château Chevrol Bel Air",
+    "type": "Rouge",
+    "appellation": {
+      "name": "Lalande-de-Pomerol",
+      "region": "Bordeaux"
+    },
+    "grapes": [
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Cabernet Franc"
+    ]
+  },
+  {
+    "id": "clarendelle",
+    "name": "Clarendelle \"Inspiré par Haut Brion\"",
+    "type": "Blanc",
+    "appellation": {
+      "name": "Bordeaux",
+      "region": "Bordeaux"
+    },
+    "grapes": [
+      "Sauvignon",
+      "Sémillon",
+      "Muscadelle"
+    ]
+  }
+]

@@ -25,17 +25,17 @@ class _WineApp extends Component {
         <h1 className="center-align">Open Wine Database</h1>
         <div className="center-align">
           You can read the Wines API documentation at{' '}
-          <a href="https://wines-api.onrender.com" target="_blank">
+          <a href="https://wines-api.onrender.com" target="_blank" rel="noopener noreferrer">
             https://wines-api.onrender.com
           </a>
         </div>
         {displayButton && (
           <div className="center-align" style={{ marginTop: 20 }}>
-            <button className="btn waves-effect waves-light" onClick={this.goBack} type="button">
+            <button data-test-id="wines-button-back" className="btn waves-effect waves-light" onClick={this.goBack} type="button">
               <i className="material-icons left">fast_rewind</i>
               Back
             </button>
-            <button
+            <button data-test-id="wines-button-home"
               className="btn waves-effect waves-light"
               style={{ marginLeft: 10 }}
               onClick={this.goHome}

@@ -43,13 +43,13 @@ class _CommentModal extends Component {
 
   render() {
     return (
-      <div ref={ref => (this.modalNode = ref)} className="modal">
+      <div data-test-id="wine-modal-comment" ref={ref => (this.modalNode = ref)} className="modal">
         <div className="modal-content">
           <h4>Tell us something about this wine</h4>
           <form className="col s12">
             <div className="row">
               <div className="input-field col s12">
-                <input
+                <input data-test-id="wine-comment-input"
                   id="inputComment"
                   type="text"
                   className="validate"
@@ -62,13 +62,13 @@ class _CommentModal extends Component {
           </form>
         </div>
         <div className="modal-footer">
-          <a
+          <a data-test-id="wine-modal-comment-button-submit"
             href="#!"
             className="modal-action waves-effect waves-green btn-flat "
             onClick={this.onSubmit}>
             Submit
           </a>
-          <a
+          <a data-test-id="wine-modal-comment-button-cancel"
             href="#!"
             className="modal-action waves-effect waves-green btn-flat "
             onClick={this.props.closeCommentModal}>

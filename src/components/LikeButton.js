@@ -29,15 +29,15 @@ class _LikeButton extends Component {
 
   render() {
     return (
-      <a className="waves-effect waves-teal btn-flat" onClick={this.toggle}>
+      <a data-test-id="wine-toggle-like" className="waves-effect waves-teal btn-flat" onClick={this.toggle}>
         {this.props.loading && <Loader />}
         {this.props.liked === true && (
-          <span>
+          <span data-test-id="wine-unlike" >
             Unlike <i className="material-icons left">thumb_down</i>
           </span>
         )}
         {this.props.liked === false && (
-          <span>
+          <span data-test-id="wine-like" >
             Like <i className="material-icons left">thumb_up</i>
           </span>
         )}

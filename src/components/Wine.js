@@ -13,28 +13,28 @@ class Wine extends Component {
     return (
       <div className="col s12 m12 l6 offset-l3">
         <h2 className="center-align">Wine details</h2>
-        <div className="card horizontal">
+        <div data-test-id="wine-details" className="card horizontal">
           <div className="card-image">
-            <img
+            <img data-test-id="wine-details-image"
               className="responsive-img wine-detail-image"
               alt="Wine bottle pic"
               src={`${this.props.host}/api/wines/${this.props.wine.id}/image`}
             />
           </div>
           <div className="card-stacked">
-            <div className="card-content">
-              <h3>{this.props.wine.name}</h3>
+            <div data-test-id="wine-details-description" className="card-content">
+              <h3 data-test-id="wine-details-name">{this.props.wine.name}</h3>
               <br />
-              <p>
+              <p data-test-id="wine-details-appellation">
                 <b>Appellation:</b> {this.props.wine.appellation.name}
               </p>
-              <p>
+              <p data-test-id="wine-details-region">
                 <b>Region:</b> {this.props.wine.appellation.region}
               </p>
-              <p>
+              <p data-test-id="wine-details-type">
                 <b>Color:</b> {this.props.wine.type}
               </p>
-              <p>
+              <p data-test-id="wine-details-grapes">
                 <b>Grapes:</b> {this.props.wine.grapes.join(', ')}
               </p>
               <CommentList wine={this.props.wine} />

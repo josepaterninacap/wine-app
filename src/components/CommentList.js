@@ -20,7 +20,7 @@ class _CommentList extends Component {
 
   render() {
     return (
-      <div>
+      <div data-test-id="wine-comments-list">
         {this.props.comments.length > 0 && <h5>Comments</h5>}
         {this.props.loading && <Loader />}
         {!this.props.loading &&

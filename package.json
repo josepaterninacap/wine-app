@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://josepaterninacap.github.io/react-wines-103-bis/",
   "devDependencies": {
+    "cypress": "^12.9.0",
     "react-scripts": "1.0.14"
   },
   "dependencies": {

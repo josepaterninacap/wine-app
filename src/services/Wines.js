@@ -1,4 +1,4 @@
-export const host = 'https://wines-api.onrender.com';
+export const host = 'https://wines-api.onrender.com/';
 
 export function fetchRegions() {
   const url = `${host}/api/regions`;

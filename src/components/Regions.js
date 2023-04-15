@@ -13,9 +13,9 @@ class Regions extends Component {
     return (
       <div className="col s12 m6 l4 offset-m3 offset-l4">
         <h2 className="center-align">Regions</h2>
-        <div className="collection">
+        <div data-test-id="wines-regions-list-container" className="collection">
           {this.props.regions.map(region => (
-            <a
+            <a data-test-id="wines-region-item"
               key={region}
               href="#!"
               onClick={e => this.onSelectRegion(e, region)}
